@@ -24,6 +24,7 @@ class ChatViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        //Drop nib cell to table view
         let nib = UINib(nibName: "MessageCell", bundle: Bundle.main)
         tableView.register(nib, forCellReuseIdentifier: K.cellIdentifier)
         
